@@ -5,8 +5,11 @@ CREATE TABLE IPL_Auction (
     Team VARCHAR(50),
     Price_Paid BIGINT
 );
---2. Most Expensive Player
 
+-- The data for this project was imported directly into PostgreSQL using the import function,
+--bypassing the need for the 'INSERT INTO' statement.
+
+--2. Most Expensive Player
 SELECT Player, Team, Price_Paid 
 FROM IPL_Auction 
 ORDER BY Price_Paid DESC 
